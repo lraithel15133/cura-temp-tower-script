@@ -1,11 +1,11 @@
-# cura-temp-tower-script
+This is a fork I made from the okke-formsma's temp tower script to essentially do the same thing except with retraction length and retraction speed
 
-Copy TempTower.py into your cura directory like the following;
+Copy .py file into your cura directory as follows;
 
 * (windows) C:\Program Files\Ultimaker Cura 4.1\plugins\PostProcessingPlugin\scripts
 * (mac) If your copy of Cura is in /Applications/, it would go into "/Applications/Ultimaker Cura.app/Contents/Resources/plugins/plugins/PostProcessingPlugin/scripts/"
 
-This script is based on some variations I found on Thingiverse.
+# cura-temp-tower-script
 
 Four settings are available;
 
