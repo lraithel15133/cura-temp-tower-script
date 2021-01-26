@@ -1,4 +1,4 @@
-This is a fork I made from the okke-formsma's temp tower script to essentially do the same thing except with retraction length and retraction speed
+This is a fork I made from okke-formsma's temp tower script to essentially do the same thing except with retraction length and retraction speed
 
 Copy .py file into your cura directory as follows;
 
