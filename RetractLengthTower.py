@@ -6,14 +6,14 @@ import re
 from ..Script import Script
 
 
-class RetractTower(Script):
+class RetractLengthTower(Script):
     def __init__(self):
         super().__init__()
 
     def getSettingDataString(self):
         return json.dumps({
-            'name': 'Retract Tower',
-            'key': 'RetractTower',
+            'name': 'Retraction Length Tower',
+            'key': 'RetractLengthTower',
             'metadata': {},
             'version': 2,
             'settings': {
