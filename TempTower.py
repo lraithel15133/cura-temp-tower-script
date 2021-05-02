@@ -76,6 +76,12 @@ class TempTower(Script):
         for i, layer in enumerate(data):
             lines = layer.split('\n')
             for j, line in enumerate(lines):
+
+                # get the layer height
+                if line.startswith(';Layer height: ') :
+                    layer_height = float(line.strip(';Layer height: '))
+                    continue
+
                 # Before ;LAYER:0 arbitrary setup GCODE can be run.
                 if line == ';LAYER:0':
                     started = True
@@ -89,11 +95,11 @@ class TempTower(Script):
                 match = cmd_re.match(line)
                 if match is None:
                     continue
-                z = float(match.groups()[0])
-				
-                if z < start_height:
+                z = float(match.groups()[0]) - layer_height
+                
+                if z < start_height :
                     continue
-				
+                
                 new_temp = start_temp + int((z - start_height) / height_inc) * temp_inc
 
                 if new_temp != current_temp:
